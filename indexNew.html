@@ -16,11 +16,30 @@
             text-decoration: none;
         }
 
+
         aside {
+            background: #1b0b32;
+            padding: 30px;
+            float: right;
+        }
+
+        aside imgMe {
+            width: 100%;
+            border-radius: 40px;
+        }
+
+
+        /* aside {
+            display: 30px;
             width: 40%;
             float: right;
-            padding-left: 80px;
-        }
+            padding-left: 100px;
+            padding-right: 200px;
+            width: 25%;
+            margin-left: 25px;
+            margin-right: 25px;
+            background-color: rgb(226, 195, 255);
+        } */
 
         article {
             margin: 10px 0;
@@ -37,25 +56,27 @@
 </head>
 
 <!-- <center> -->
-<aside>
-    <br>
-    <img src="imagens/1000043620.jpg" width="600" height="700" alt="O invertido panssexual">
-    <br>
-    <center>
-        <nav>
-            <a href="imagens/FlagPan.png">My sexuality Flag</a>
-            <br>
-            <a href="imagens/FlagBigender.png">My gender Flag</a>
-        </nav>
-    </center>
-</aside>
+<div class="imgMe">
+    <aside>
+        <br>
+        <img src="imagens/1000043620.jpg" width="600" height="700" alt="O invertido panssexual">
+        <br>
+        <center>
+            <nav>
+                <a href="imagens/FlagPan.png">My sexuality Flag</a>
+                <br>
+                <a href="imagens/FlagBigender.png">My gender Flag</a>
+            </nav>
+        </center>
+    </aside>
+</div>
 
 <body>
     <header>
         <h1 style="color: rgb(147, 101, 255);">Blog de Viviane Vasconcellos</h1>
     </header>
 
-    <main>
+    <div class="main">
         <section>
             <h2 style="color: rgb(130, 226, 255);"><i>Um pouco sobre mim...</i></h2>
 
@@ -120,21 +141,12 @@
             </article>
 
         </section>
-    </main>
+    </div>
     <!-- </center> -->
 
     <br>
 
     <footer><i>Nick Wolf - 2026</i></footer>
-
-    <!-- <style>
-        .article {
-            margin: 6;
-            padding: 20px;
-            background-color: rgb(46, 0, 81);
-        }
-    </style> -->
-
 
 </body>
 
