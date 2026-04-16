@@ -7,8 +7,15 @@
     <title>Blog de Viviane</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             background-color: #1b0b32;
+            padding: 10px;
         }
 
         nav a {
@@ -16,25 +23,24 @@
             text-decoration: none;
         }
 
-
         aside {
             background: #1b0b32;
-            padding: 30px;
-            padding-bottom: 500px;
+            padding: 20px;
             float: right;
+            width: 40%;
+            border-radius: 40px; /*Aredonda as bordas*/
         }
 
-        aside imgMe {
+        aside img {
             width: 100%;
             border-radius: 40px;
-            max-width: 100%; /*Faz as imagens nunca serem maiores que a tela*/
-            height: auto; /*Mantém a proporção original da imagem.*/
         }
 
         article {
             margin: 10px;
             padding: 20px;
             background-color: rgb(46, 0, 81);
+            border-radius: 40px;
         }
 
         footer {
@@ -42,36 +48,42 @@
             margin-top: 30px;
         }
 
-        /* media query — significa: "se a tela tiver menos de 600px de largura (celular), aplica as regras dentro do bloco". */
+        /* media query — significa: "se a tela tiver menos de 600px de largura (celular), aplica as regras dentro do bloco"*/
+        /* Esses comandos só funcionam no cell */
         @media (max-width: 600px) {
-            body {
+            aside {
+                float: none; /*Desliga o efeito de flutuar, fazendo o elemento se comportar como um bloco normal, ou seja, fica empilhado normalmente sob o conteúdo do site quando muda p/ cell*/
+                width: 100%;
                 padding: 10px;
-                /*- padding: 10px - reduz o espaçamento nas bordas porque a tela é menor*/
+                margin-bottom: 20px;
+            }
+
+            body {
                 font-size: 15px;
-                /* font-size: 15px - reduz levemente o texto para caber melhor*/
             }
         }
     </style>
 
 </head>
 
-<!-- <center> -->
-<div class="imgMe">
-    <aside>
-        <br>
-        <img src="imagens/1000043620.jpg" width="600" height="700" alt="O invertido panssexual">
-        <br>
-        <center>
-            <nav>
-                <a href="imagens/FlagPan.png">My sexuality Flag</a>
-                <br>
-                <a href="imagens/FlagBigender.png">My gender Flag</a>
-            </nav>
-        </center>
-    </aside>
-</div>
-
 <body>
+
+    <div class="imgMe">
+        <aside>
+            <br>
+            <!-- <img src="imagens/1000043620.jpg" width="600" height="700" alt="O invertido panssexual"> -->
+            <img src="imagens/1000043620.jpg" alt="O invertido panssexual">
+            <br>
+            <center>
+                <nav>
+                    <a href="imagens/FlagPan.png">My sexuality Flag</a>
+                    <br>
+                    <a href="imagens/FlagBigender.png">My gender Flag</a>
+                </nav>
+            </center>
+        </aside>
+    </div>
+
     <header>
         <h1 style="color: rgb(147, 101, 255);">Blog de Viviane Vasconcellos</h1>
     </header>
@@ -142,7 +154,6 @@
 
         </section>
     </div>
-    <!-- </center> -->
 
     <br>
     <center>
